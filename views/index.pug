@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/pt.png")
+                | ADA 
+            li #[a(href="/") Home] 
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") ClassInfo]
+            li #[a(href="/") Contactus]
+            //- Semantic tags
+            //- nav,section,aside,footer,article
+        section#intro 
+            div Welcome to Amish's dance Academy 
+            div.small Eat,Sleep,Dance REPEAT!! 
+        section#mission 
+            h2 Our Missions:
+            div.card 
+                h3 Dance Perfection
+                div.cardbox 
+                    div.card-img                
+                        img(src="/static/Dance1.png")
+                    dev.card-content 
+                        p This is the Best Dance Academy of the universe
+
+            div.card 
+                h3 Dance the Way you like
+                div.cardbox 
+                    div.card-img                
+                        img(src="/static/Dance2.png")
+                    dev.card-content 
+                        p This is the Best Dance Academy of the universe
+            div.card 
+                h3 Best & Experienced Teaching
+                div.cardbox 
+                    div.card-img                
+                        img(src="/static/Dance3.png")
+                    dev.card-content 
+                        p This is the Best Dance Academy of the universe
+        section#sponsors 
+            h2 Our Sponsers:
+            div.sponsors
+                img(src="/static/logo1.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/logo2.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/logo4.png", alt="Sponsor Image",class="spImage")
+                img(src="/static/logo5.png", alt="Sponsor Image",class="spImage")
+        footer#footer 
+            | Copyright © 2022 AmishDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
